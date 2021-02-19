@@ -3,9 +3,11 @@ var db,gameState=0,playerCount;
 
 var form,player,game;
 var allPlayers;
+var car1, car2, car3, car4;
+var cars;
 
 function setup(){
-    createCanvas(500,500);
+    createCanvas(displayWidth-30,displayHeight-100);
     db=firebase.database();
     game= new Game();
     game.getState();
